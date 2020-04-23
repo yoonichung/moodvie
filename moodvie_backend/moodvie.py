@@ -6,6 +6,12 @@ app = Flask(__name__) # create an app instance
 def index():
     return render_template('index.html', title='Home')
 
+"""
+@app.route('/moods')
+def moods():
+    return render_template('moods.html', title = 'What are you in the mood for?')
+"""
+
 # @app.route('/recommendations')
 # def recommendations():
 
