@@ -1,18 +1,23 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css"> 
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}"> 
     <title>Moodvie</title>
   </head>
   
   <body>
     
-    <a href="#">
+    <a>
+    <!-- <a href="#"> -->
       <div class="fearless">
-        Fearless
+        <form action ="/length">
+          <input type="submit" name="mood" value="test"/>
+        </form>
+        <!-- Fearless -->
       </div>
     </a>
+    <a href="/length?mood=test">button</a>
     
-    <a href="#">
+    <a href="/length?mood=uplifting">
       <div class="uplifting">
         Uplifting
       </div>
@@ -31,3 +36,5 @@
     </a>
     
   </body>
+
+  
