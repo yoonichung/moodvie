@@ -69,35 +69,31 @@ body {
 
 .fearless {
     font-size: 2em;
-    font-weight: bold;
     color: white;
-    padding: 50px;
+    padding: 50px 50px 50px 200px;
     display: block;
     width: 1630px;
 }
 
 .uplifting {
     font-size: 2em;
-    font-weight: bold;
     color: white;
-    padding: 50px;
+    padding: 50px 50px 50px 200px;
     width: 1630px;
 }
 
 .thought_provoking {
     font-size: 2em;
-    font-weight: bold;
     color: white;
-    padding: 50px;
+    padding: 50px 50px 50px 200px;
     display: block;
     width: 1630px;
 }
 
 .adventurous {
     font-size: 2em;
-    font-weight: bold;
     color: white;
-    padding: 50px;
+    padding: 50px 50px 50px 200px;
     display: block;
     width: 1630px;
 }
@@ -137,8 +133,8 @@ a:hover > .adventurous {
 }
 
 .footer p{
-    background-color: white;
-    color:  #4E5DEC;
+    background-color:#4E5DEC;
+    color:  white;
     font-size: smaller;
     display: flex;
     flex-flow: row-reverse;
