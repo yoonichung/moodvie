@@ -1,0 +1,88 @@
+ /* *{
+    outline: 1px solid white;
+}  */
+
+body {
+    background-color: white;
+    color: white;
+
+}
+
+.landing {
+    position: relative;
+    top: 8%;
+    left: 8%;
+    display: flex;
+    flex-flow: column wrap;
+    width: 1440px;
+    height: 1400px;
+    background-color: rgba(78, 93, 236, 1);
+}
+
+.links {
+    list-style: none;
+    font-size: larger;
+    padding: 2px 4px 2px 4px;
+}
+
+body {
+    font-family: 'Cantarell', sans-serif;
+    background-color: #4E5DEC;
+  }
+  
+  .fearless {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 50px;
+  }
+  
+  .uplifting {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 50px;
+  }
+  
+  .thought_provoking {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 50px;
+    display: block;
+  }
+  
+  .adventurous {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 50px;
+    display: block;
+  }
+  
+  
+  a:link {
+    text-decoration: none;
+     display: block;
+  }
+  
+  a:hover > .fearless { 
+    background: rgb(217,107,107);
+    background: linear-gradient(90deg, rgba(217,107,107,1) 0%, rgba(29,180,197,1) 100%);
+  }
+  
+  a:hover > .uplifting { 
+    background: rgb(236,173,78);
+    background: linear-gradient(90deg,  rgba(236,173,78,1) 0%, rgba(237,181,218,1) 100%);
+  }
+  
+  a:hover > .thought_provoking { 
+    background: rgb(188,217,107);
+    background: linear-gradient(90deg,    rgba(188,217,107,1) 0%, rgba(29,166,197,1) 100%);
+  }
+  
+  a:hover > .adventurous { 
+    background: rgb(107,206,217);
+    background: linear-gradient(90deg,    rgba(107,206,217,1) 0%, rgba(197,29,189,1) 100%);
+  }
+
