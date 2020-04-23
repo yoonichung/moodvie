@@ -4,13 +4,17 @@ app = Flask(__name__) # create an app instance
 @app.route('/')
 @app.route('/index')
 def home():
-    #chosen_mood = request.form['mood']
     return render_template('index.html')
-    
 
 @app.route('/length')
-def length():
-    return render_template('length.html')
+def choose_mood():
+    mood = request.args.get("mood")
+    return render_template('length.html',selectedMood=mood)
+
+""" @app.route('/length/type')
+def choose_length(selectedMood):
+    #length = request.args.get("length")
+    return render_template('type.html') """
 
 """
 @app.route('/recommendations')
