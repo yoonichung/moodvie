@@ -10,65 +10,107 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/index.css')}}"> 
+    <link rel="stylesheet" type="text/css" href="moodvie_backend/static/css/index.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/index.css')}}">  -->
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
   </head>
 
     <body>
 <!-- Navivation section-->
-      <nav class="links"> 
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand"><p class="logo">MOODVIE</p></a>
+  <a class="navbar-brand"><p class="tagline">MOOVIES FOR YOUR MOOD</p></a>
+</nav>
+
+      <!-- <nav class="links"> 
         <div> 
         <a id="home" href='/index'> 
           <img src="static/images/MOODVIE_logo.png" 
          width="220" height="30">
-        </a>
+        </a> -->
      
-        </div>
+        <!-- </div>
         <p id="Tagline">MOVIES FOR YOUR MOOD</p>
-      </nav>
+      </nav> -->
       
 <!-- Landing question-->
+<div class="container">
+  <div class="row">
+    <div class="col">
       <div class="hero_text"> 
           <h1 class= "header">What are you in the mood for?</h1>
       </div>
+    </div>
+  </div>
+</div>
+
   
 <!-- Options -->
-      <div class="mood_opt">
 
+<div class="container">
+  <div class="col">
+      <div class="mood_opt">
         <a href="/length?mood=fearless">
           <div class="fearless">
           Fearless
           </div>
         </a>
+      </div>
+    </div>
+  </div>
 
+  <div class="container">
+    <div class="col">
+        <div class="mood_opt">
         <a href="/length?mood=uplifting">
           <div class="uplifting">
           Uplifting
           </div>
         </a>
+      </div>
+    </div>
+  </div>
 
+<div class="container">
+  <div class="col">
+      <div class="mood_opt">
         <a href="/length?mood=thought_provoking">
           <div class="thought_provoking">
           Thought Provoking 
           </div>
         </a>
+      </div>
+    </div>
+  </div>
 
+  <div class="container">
+    <div class="col">
+      <div class="mood_opt">
         <a href="/length?mood=adventurous">
           <div class="adventurous">
           Adventurous 
           </div>
           </a>
       </div>
+    </div>
+  </div>
 
 <!-- Footer -->
-      <div class="footer">
+
+<nav class="navbar fixed-bottom navbar-light bg-light">
+  <a class="navbar-brand" href="#">Made with ❤︎ by Code First Girls © 2020</a>
+</nav>
+
+
+      <!-- <div class="footer">
         <p> 
          Made with ❤︎ by Code First Girls © 2020
         </p>
       </div>
-    </div> 
+    </div>  -->
     
     
     <!-- Bootstrap JS -->

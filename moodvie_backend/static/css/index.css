@@ -8,6 +8,16 @@ body {
     font-family: 'Cantarell', sans-serif;
 }
 
+.logo {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+}
+
+.tagline {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1.5em;
+}
+
 .landing {
     position: relative;
     top: 8%;
