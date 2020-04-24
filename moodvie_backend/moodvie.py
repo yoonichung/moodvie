@@ -1,19 +1,31 @@
-from flask import Flask, render_template # import flask
+from flask import Flask, render_template, request # import flask
 app = Flask(__name__) # create an app instance
 
 @app.route('/')
 @app.route('/index')
-def index():
-    return render_template('index.html', title='Home')
+def home():
+    return render_template('index.html')
+
+@app.route('/length')
+def choose_mood():
+    mood = request.args.get("mood")
+    return render_template('length.html',selectedMood=mood)
+
+""" @app.route('/length/type')
+def choose_length(selectedMood):
+    #length = request.args.get("length")
+    return render_template('type.html') """
 
 """
-@app.route('/moods')
-def moods():
-    return render_template('moods.html', title = 'What are you in the mood for?')
+@app.route('/recommendations')
+def recommendations():
+    return render_template('recommendations.html')
+"""
+"""app.route('/about')
+def about():
+    return render_template('about.html')
 """
 
-# @app.route('/recommendations')
-# def recommendations():
 
 """def sql_database():
     from functions.sqlquery import sql_query
