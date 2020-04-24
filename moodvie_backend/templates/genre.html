@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+   <body>
+    <h1> You're in the mood for something {{selectedMood}} - {{selectedLength}} - {{selectedType}}</h1>
+    <h1> What type of film? </h1>
+
+    <a href="/movie?mood={{selectedMood}}&length={{selectedLength}}&type={{selectedType}}&genre=fiction"> 
+      <div class="short">
+      Fiction
+      </div>
+    </a>
+    
+    <a href="/movie?mood={{selectedMood}}&length={{selectedLength}}&type={{selectedType}}&genre=documentary"> 
+      <div class="short">
+      Documentary
+      </div>
+    </a>

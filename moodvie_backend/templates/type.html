@@ -3,3 +3,15 @@
    <body>
     <h1> You're in the mood for something {{selectedMood}} - {{selectedLength}} </h1>
     <h1> What type of film? </h1>
+
+    <a href="/genre?mood={{selectedMood}}&length={{selectedLength}}&type=independent"> 
+      <div class="short">
+      Independent
+      </div>
+    </a>
+    
+    <a href="/genre?mood={{selectedMood}}&length={{selectedLength}}&type=mainstream"> 
+      <div class="short">
+      Mainstream
+      </div>
+    </a>
