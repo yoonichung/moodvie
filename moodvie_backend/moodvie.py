@@ -27,13 +27,13 @@ def choose_type():
     return render_template('genre.html',selectedMood=mood, selectedLength=length, selectedType=type)  
 #print(mood, file=sys.stderr)
 
-@app.route('/movies')
+@app.route('/movie')
 def choose_movie():
     mood = request.args.get("mood")
     length = request.args.get("length")
     type = request.args.get("type")
     genre = request.args.get("genre")
-    return render_template('movies.html',selectedMood=mood, selectedLength=length, selectedType=type, selectedGenre=genre)
+    return render_template('movie.html',selectedMood=mood, selectedLength=length, selectedType=type, selectedGenre=genre)
 
 """ @app.route('/recommendations')
 def recommendations():
@@ -49,19 +49,17 @@ def sql_database():
     results = sql_query('''SELECT * FROM data''')
     return render_template('index.html') """
 
-
-
-
 if __name__ == "main":
     app.run(debug=True)
     app.config['TEMPLATES_AUTO_RELOAD']=True
 
 """
-To run the web app, in terminal type in:
-python moodvie.py 
-OR
-export FLASK_APP=moodvie.py OR export FLASK_ENV=development to be in the debug mode
-flask run
+To run the web app on mac, in terminal type in:
+"python moodvie.py"
+OR if using a virtual environment
+"source 'name of your environment'/bin/activate"
+"export FLASK_APP=moodvie.py" OR "export FLASK_ENV=development" to be in the debug mode
+"flask run"
 
 and enter the URL http://localhost:5000/ or
 http://127.0.0.1:5000/
