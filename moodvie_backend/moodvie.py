@@ -10,7 +10,6 @@ def home():
 @app.route('/length')
 def choose_mood():
     mood = request.args.get("mood")
-    print(mood, file=sys.stderr)
     return render_template('length.html',selectedMood=mood)
 
 @app.route('/type')
@@ -23,17 +22,23 @@ def choose_length():
 def choose_type():
     mood = request.args.get("mood")
     length = request.args.get("length")
-    type = request.args.get("type")
-    return render_template('genre.html',selectedMood=mood, selectedLength=length, selectedType=type)  
+    movie_type = request.args.get("movie_type")
+    return render_template('genre.html',selectedMood=mood, selectedLength=length, selectedType=movie_type)  
 #print(mood, file=sys.stderr)
 
 @app.route('/movie')
 def choose_movie():
-    mood = request.args.get("mood")
-    length = request.args.get("length")
-    type = request.args.get("type")
-    genre = request.args.get("genre")
-    return render_template('movie.html',selectedMood=mood, selectedLength=length, selectedType=type, selectedGenre=genre)
+    mood = request.args.get("mood").capitalize()
+    length = request.args.get("length").capitalize()
+    movie_type = request.args.get("movie_type").capitalize()
+    genre = request.args.get("genre").capitalize()
+    conditions = (mood, length, movie_type, genre, )
+    
+    from functions.sqlquery import sql_query_conditional
+    chosen_movie = sql_query_conditional("SELECT * FROM data WHERE Mood=? AND Length=? AND Type=?AND Genre=?",(conditions)) # returns query as a tuple list
+    movie = ([i[1] for i in chosen_movie][0]) # get title of the movie from tuple list
+    print(movie)
+    return render_template('movie.html',selectedMood=mood, selectedLength=length, selectedType=movie_type, selectedGenre=genre, selectedMovie=movie)
 
 """ @app.route('/recommendations')
 def recommendations():
@@ -58,7 +63,8 @@ To run the web app on mac, in terminal type in:
 "python moodvie.py"
 OR if using a virtual environment
 "source 'name of your environment'/bin/activate"
-"export FLASK_APP=moodvie.py" OR "export FLASK_ENV=development" to be in the debug mode
+"export FLASK_APP=moodvie.py"
+"export FLASK_ENV=development" to be in the debug mode
 "flask run"
 
 and enter the URL http://localhost:5000/ or
