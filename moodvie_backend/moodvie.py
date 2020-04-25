@@ -47,12 +47,7 @@ def recommendations():
 app.route('/about')
 def about():
     return render_template('about.html')
-
-
-def sql_database():
-    from functions.sqlquery import sql_query
-    results = sql_query('''SELECT * FROM data''')
-    return render_template('index.html') """
+ """
 
 if __name__ == "main":
     app.run(debug=True)
