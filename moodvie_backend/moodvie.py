@@ -2,11 +2,23 @@ from flask import Flask, render_template, request # import flask
 import sys
 app = Flask(__name__) # create an app instance
 
+""" Navigation """
 @app.route('/')
 @app.route('/index')
 def home():
     return render_template('index.html')
 
+@app.route('/about')
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/recommendations')
+@app.route('/recommendations')
+def reccom():
+    return render_template('recomm.html')
+
+"""Options"""
 @app.route('/length')
 def choose_mood():
     mood = request.args.get("mood")

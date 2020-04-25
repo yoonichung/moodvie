@@ -1,0 +1,56 @@
+body {
+    color: white;
+    background: rgb(237,181,218);
+    background: linear-gradient(90deg, rgba(237,181,218,1) 0%, rgba(236,173,78,1) 100%);
+  }
+canvas{
+  background-color: RGB(255, 255, 255);
+
+}
+
+.tagline {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 0.6em;
+  letter-spacing: 4px;
+  padding: 10px;
+}
+
+
+
+  /* .header {
+    text-align: center;
+    font-family: 'Cantarell', sans-serif;
+    letter-spacing: 2px;
+    padding-top: 80px;
+  }
+  
+  .choices {
+    text-align: center;
+    font-family: 'Cantarell', sans-serif;
+    color: #4E5DEC;
+    letter-spacing: 2px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Prata', serif;
+    font-size: 6em;
+    padding: 100px 30px;
+  }
+  
+  .short {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Cantarell', sans-serif;
+    letter-spacing: 2px;
+    padding: 50px 50px;
+  }
+  
+  a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    color: #4E5DEC;
+  } */

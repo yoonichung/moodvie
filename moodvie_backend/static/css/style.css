@@ -24,6 +24,12 @@ body {
     padding: 10px;
 }
 
+.about {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: 4px;
+    padding: 10px;
+}
 
 h1 {
     font-family: 'Prata', serif;
