@@ -6,7 +6,16 @@ body {
     color: white;
     background-color: #4E5DEC;
     font-family: 'Cantarell', sans-serif;
-    margin: 0; padding: 0 
+}
+
+.logo {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+}
+
+.tagline {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1.5em;
 }
 
 .landing {
@@ -65,6 +74,7 @@ body {
     position: relative;   
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .fearless {
@@ -72,7 +82,7 @@ body {
     color: white;
     padding: 50px 50px 50px 200px;
     display: block;
-    width: 100%;
+    width: 1630px;
 }
 
 .uplifting {
@@ -87,7 +97,7 @@ body {
     color: white;
     padding: 50px 50px 50px 200px;
     display: block;
-    width: 100%;
+    width: 1630px;
 }
 
 .adventurous {
@@ -95,7 +105,7 @@ body {
     color: white;
     padding: 50px 50px 50px 200px;
     display: block;
-    width: 100%;
+    width: 1630px;
 }
 
 
@@ -129,6 +139,7 @@ a:hover > .adventurous {
     position: relative;
     display: flex;
     justify-content: flex-end;
+    padding: 5px;
 }
 
 .footer p{
@@ -138,7 +149,6 @@ a:hover > .adventurous {
     display: flex;
     flex-flow: row-reverse;
     padding: 20px;
-    margin: 0;
     letter-spacing: 0.5em;
-    width: 100%;
+    width: 3000px;
 }
