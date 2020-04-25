@@ -3,7 +3,7 @@ body {
     background: rgb(237,181,218);
     background: linear-gradient(90deg, rgba(237,181,218,1) 0%, rgba(236,173,78,1) 100%);
   }
-  
+
   .header {
     text-align: center;
     font-family: 'Cantarell', sans-serif;
