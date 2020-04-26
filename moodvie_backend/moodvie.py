@@ -2,11 +2,23 @@ from flask import Flask, render_template, request # import flask
 import sys
 app = Flask(__name__) # create an app instance
 
+""" Navigation """
 @app.route('/')
 @app.route('/index')
 def home():
     return render_template('index.html')
 
+@app.route('/about')
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/recommendations')
+@app.route('/recommendations')
+def reccom():
+    return render_template('submit.html')
+
+"""Options"""
 @app.route('/length')
 def choose_mood():
     mood = request.args.get("mood")
@@ -40,11 +52,16 @@ def choose_movie():
     print(movie)
     return render_template('movie.html',selectedMood=mood, selectedLength=length, selectedType=movie_type, selectedGenre=genre, selectedMovie=movie)
 
-""" @app.route('/recommendations')
-def recommendations():
-    return render_template('recommendations.html')
+@app.route('/recommendations')
+def recommend():
+    return render_template('submit.html')
 
-app.route('/about')
+@app.route('/submitted', methods=['GET','POST'])
+def submitted():
+    rec = request.form
+    return render_template('submitted.html')
+
+"""app.route('/about')
 def about():
     return render_template('about.html')
  """

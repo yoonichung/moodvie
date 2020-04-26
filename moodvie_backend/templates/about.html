@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Moodvie</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Chart.js-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style_about.css')}}">
+  </head>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <!-- <a class="navbar-brand"><p class="logo">MOODVIE</p></a> -->
+    <a class="navbar-brand nav-bar dark" href="/"> 
+        <img class="logo" alt="home" src="{{url_for('static', filename='images/MOODVIE_logo2.png')}}"  width="155" height="20" ></a>
+        <a class="nav-link text-white" href="/about"><p class="text-white">ABOUT</p></a>  
+        <a class="nav-link text-white" href="/recommendations"><p>RECOMMENDATIONS</p></a>
+        <a class="nav-item"><p class="tagline">MOOVIES FOR YOUR MOOD</p></a>
+</nav>    
+
+<div class="container">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">    
+        <div class="card-body"> 
+    <canvas id="myChart"></canvas>
+        </div>   
+        </div>
+    </div>
+</div>
+
+<script>
+    let myChart = document.getElementById('myChart').getContext('2d');
+
+    //Global Options
+    Chart.defaults.global.defaultFontFamily = 'Cantarell';
+    Chart.defaults.global.defaultFontSize = 14;
+    Chart.defaults.global.defaultFontColor = 'black'
+
+
+    let moodChart = new Chart(myChart, {
+        type:'doughnut',
+        data:{
+            labels:['Rarely true', 'Sometimes true', 'Often true','Very often or always true'],
+            datasets:[{
+                label:'Responses',
+                data: [
+                    1,
+                    5,
+                    15,
+                    17,
+                ],
+                // backgroundColor: 'white'
+                backgroundColor: [
+                '#1DA6C5',
+                '#BCD96B',
+                '#4E5DEC',
+                '#FDFFB2',
+                ]
+            }]
+        },
+        options:{
+            title: {
+                display:true,
+                text:'Pick movies based on mood',
+                fontSize: 18,
+            },
+           plugins:{
+                labels: {
+                render: 'percentage',
+                fontColor: ['green', 'white', 'red'],
+                precision: 2,
+                arc: true,
+                }
+            },
+            legend:{
+                display:true,
+                postion:'right',
+                // labels:{
+                //     fontColor: '#000'
+                // }
+            },
+            // layout: {
+            //     padding: {
+            //     }
+            // }
+        },
+        tooltips:{
+            enabled:true
+        }
+    });
+</script>
+
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<!--Chart JS-->
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-d"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Moodvie</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style_submit.css')}}">
+  </head>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navivation section-->
+  <nav class="navbar">
+    <a class="navbar-brand" href="/"> 
+      <img alt="home" src="{{url_for('static', filename='images/MOODVIE_logo2.png')}}"  width="155" height="20" ></a>
+      <a class="nav-link text-white" href="/about"><p>ABOUT</p></a>  
+      <a class="nav-link text-white" href="/recommendations"><p>RECOMMENDATIONS</p></a>
+      <a class="nav-item"><p class="tagline">MOOVIES FOR YOUR MOOD</p></a>
+  </nav>
+  
+  
+  <!-- Landing question-->
+  <div class="container.fluid">
+    <div class="col">
+          <h1>Submit Recommendations</h1>
+      </div>
+    </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col">
+  <form action="/submitted", methods='POST'>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="film">Film</label>
+        <input type="text" class="form-control" id="inputfilm" placeholder="Name of film">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="length">Length</label>
+        <input type="text" class="form-control" id="inputLength" placeholder="Feature length or short?">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="type">Type</label>
+        <input type="text" class="form-control" id="inputType" placeholder="Independent or mainstream?">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="genre">Genre</label>
+        <input type="text" class="form-control" id="inputGenre" placeholder="Fiction or documentary?">
+      </div>
+    </div>
+    <div class="watch_now">
+      <button class="submit">SUBMIT</button>
+    </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- My JS -->
+    <script src="script.js"></script>
+ 
+  </body>
+</html>

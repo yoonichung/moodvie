@@ -9,21 +9,27 @@ body {
     background-color: rgba(78, 93, 236, 1);
 }
 
-/* 
-.logo {
+
+.navbar {
     font-family: 'Cantarell', sans-serif;
-    font-weight: 700;
-    letter-spacing: 8px;
+    font-size: 0.7em;
+    letter-spacing: 4px;
+    padding: 10px;
+}
+
+/* .tagline {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: 4px;
     padding: 10px;
 } */
 
-.tagline {
+.about {
     font-family: 'Cantarell', sans-serif;
     font-size: 0.6em;
     letter-spacing: 4px;
     padding: 10px;
 }
-
 
 h1 {
     font-family: 'Prata', serif;
