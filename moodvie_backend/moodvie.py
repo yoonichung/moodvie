@@ -49,8 +49,12 @@ def choose_movie():
     from functions.sqlquery import sql_query_conditional
     chosen_movie = sql_query_conditional("SELECT * FROM data WHERE Mood=? AND Length=? AND Type=?AND Genre=?",(conditions)) # returns query as a tuple list
     movie = ([i[1] for i in chosen_movie][0]) # get title of the movie from tuple list
-    print(movie)
-    return render_template('movie.html',selectedMood=mood, selectedLength=length, selectedType=movie_type, selectedGenre=genre, selectedMovie=movie)
+    url = ([i[6] for i in chosen_movie][0])
+    
+    from functions.web_scraping import get_info # get info about the movie from IMDB url
+    release_year, director, summary = get_info(url)
+
+    return render_template('movie.html',selectedMood=mood, selectedLength=length, selectedType=movie_type, selectedGenre=genre, selectedMovie=movie, Director=director, Year=release_year, Summary=summary)
 
 @app.route('/recommendations')
 def recommend():
