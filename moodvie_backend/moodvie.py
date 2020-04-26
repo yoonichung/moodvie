@@ -16,7 +16,7 @@ def about():
 @app.route('/recommendations')
 @app.route('/recommendations')
 def reccom():
-    return render_template('recomm.html')
+    return render_template('submit.html')
 
 """Options"""
 @app.route('/length')
