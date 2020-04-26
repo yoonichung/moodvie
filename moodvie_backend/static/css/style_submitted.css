@@ -18,13 +18,12 @@ body {
     padding: 10px;
 } */
 
-.tagline {
+.navbar {
     font-family: 'Cantarell', sans-serif;
-    font-size: 0.6em;
+    font-size: 0.7em;
     letter-spacing: 4px;
     padding: 10px;
-}
-
+  }
 
 h1 {
     font-family: 'Prata', serif;

@@ -18,6 +18,14 @@ body {
   letter-spacing: 2px;
 }
 
+
+.navbar {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 4px;
+  padding: 10px;
+}
+
 .movie {
   text-align: left;
   font-size: 4em;

@@ -10,19 +10,12 @@ body {
     background: linear-gradient(90deg, rgba(181,219,237,0.8281687675070029) 0%, rgba(137,78,236,0.788953081232493) 100%);
 }
 
-/* 
-.logo {
-    font-family: 'Cantarell', sans-serif;
-    font-weight: 700;
-    letter-spacing: 8px;
-    padding: 10px;
-} */
 
-.tagline {
-    font-family: 'Cantarell', sans-serif;
-    font-size: 0.6em;
-    letter-spacing: 4px;
-    padding: 10px;
+.navbar {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 4px;
+  padding: 10px;
 }
 
 
