@@ -1,3 +1,7 @@
+/* *{
+    outline: 1px solid white;
+}  */
+
 body {
     color: white;
     background: rgb(237,181,218);
@@ -6,7 +10,7 @@ body {
 
   .navbar {
     font-family: 'Cantarell', sans-serif;
-    font-size: 0.7em;
+    font-size: 0.9em;
     letter-spacing: 4px;
     padding: 10px;
   }
@@ -15,7 +19,7 @@ body {
     text-align: center;
     font-family: 'Cantarell', sans-serif;
     letter-spacing: 2px;
-    padding-top: 80px;
+    padding-top: 60px;
   }
   
   .choices {
@@ -29,7 +33,7 @@ body {
     text-align: center;
     font-family: 'Prata', serif;
     font-size: 6em;
-    padding: 100px 30px;
+    padding: 50px 30px;
   }
   
   .short {
