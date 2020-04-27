@@ -56,21 +56,19 @@ def choose_movie():
     movie_type = request.args.get("movie_type").capitalize()
     genre = request.args.get("genre").capitalize()
     conditions = (mood, length, movie_type, genre, )
-    print(mood)
-    print(genre)
+    
     # Get movie info from the database
     from functions.sqlquery import sql_query_conditional
-    chosen_movie = sql_query_conditional("SELECT * FROM data WHERE Mood=? AND Length=?",(mood,genre,))
-    print(chosen_movie)
-    #chosen_movie = sql_query_conditional("SELECT * FROM data WHERE Mood=? AND Length=? AND Movie_type=? AND Genre=?",(conditions)) # returns query as a tuple list
-    #movie = ([i[1] for i in chosen_movie][0]) # get title of the movie from tuple list
-    #imdb_url = ([i[6] for i in chosen_movie][0]) # get IMDB link from tuple list
-    #embed_url = ([i[7] for i in chosen_movie][0]) # get video embed link from tuple list
+    chosen_movie = sql_query_conditional("SELECT * FROM data WHERE Mood=? AND Length=? AND Movie_type=? AND Genre=?",(conditions)) # returns query as a tuple list
+    movie = ([i[1] for i in chosen_movie][0]) # get title of the movie from tuple list
+    imdb_url = ([i[6] for i in chosen_movie][0]).strip() # get IMDB link from tuple list
+    embed_url = ([i[7] for i in chosen_movie][0]).strip() # get video embed link from tuple list
+
     # Web-scrape from IMDB
-    #from functions.web_scraping import get_info
-    #release_year, director, summary = get_info(imdb_url)
-    #return render_template('movie.html',selectedMood=mood, selectedLength=length, selectedType=movie_type, selectedGenre=genre, selectedMovie=movie, Director=director, Year=release_year, Summary=summary,Embed_url=embed_url)
-    return render_template('movie.html')
+    from functions.web_scraping import get_info
+    release_year, director, summary = get_info(imdb_url)
+    return render_template('movie.html',selectedMood=mood, selectedLength=length, selectedType=movie_type, selectedGenre=genre, selectedMovie=movie, Director=director, Year=release_year, Summary=summary,Embed_url=embed_url)
+
 if __name__ == "main":
     app.run(debug=True)
     app.config['TEMPLATES_AUTO_RELOAD']=True
