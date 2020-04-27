@@ -8,7 +8,7 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <!-- Chart.js-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style_about.css')}}">
   </head>
@@ -22,10 +22,10 @@
 <nav class="navbar">
     <!-- <a class="navbar-brand"><p class="logo">MOODVIE</p></a> -->
     <a class="navbar-brand nav-bar dark" href="/"> 
-        <img class="logo" alt="home" src="{{url_for('static', filename='images/MOODVIE_logo2.png')}}"  width="155" height="20" ></a>
+        <img class="logo" alt="home" src="{{url_for('static', filename='images/MOODVIE_logo2.png')}}"  width="165" height="52" class="rounded" ></a>        
         <a class="nav-link text-white" href="/about"><p class="text-white">ABOUT</p></a>  
         <a class="nav-link text-white" href="/recommendations"><p>RECOMMENDATIONS</p></a>
-        <a class="nav-item"><p class="tagline">MOOVIES FOR YOUR MOOD</p></a>
+        <!-- <a class="nav-item"><p class="tagline">MOOVIES FOR YOUR MOOD</p></a> -->
 </nav>    
 
 <div class="container">
@@ -107,7 +107,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 <!--Chart JS-->
-<script src=" https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-d"></script>
 
 </body>
