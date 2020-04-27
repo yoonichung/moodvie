@@ -9,14 +9,26 @@ def home():
     return render_template('index.html')
 
 @app.route('/about')
-@app.route('/about')
 def about():
     return render_template('about.html')
 
 @app.route('/recommendations')
-@app.route('/recommendations')
-def reccom():
+def recommend():
     return render_template('submit.html')
+
+@app.route('/submitted')
+def submitted():
+    rec_mood = request.args.get("Film")
+    rec_length = request.args.get("Length")
+    rec_genre = request.args.get("Genre")
+    rec_type = request.args.get("Movie_Type")
+    rec = (rec_mood, rec_length, rec_type, rec_genre)
+
+    # Update the recommendations database
+    from functions.sqlquery import sql_make_rec ,sql_edit_insert 
+    sql_make_rec()
+    sql_edit_insert("INSERT INTO recommendations (Film,Length,Type,Genre) VALUES(?,?,?,?)",(rec))
+    return render_template('submitted.html')
 
 """Options"""
 @app.route('/length')
@@ -36,7 +48,6 @@ def choose_type():
     length = request.args.get("length")
     movie_type = request.args.get("movie_type")
     return render_template('genre.html',selectedMood=mood, selectedLength=length, selectedType=movie_type)  
-#print(mood, file=sys.stderr)
 
 @app.route('/movie')
 def choose_movie():
@@ -45,31 +56,21 @@ def choose_movie():
     movie_type = request.args.get("movie_type").capitalize()
     genre = request.args.get("genre").capitalize()
     conditions = (mood, length, movie_type, genre, )
-    
+    print(mood)
+    print(genre)
+    # Get movie info from the database
     from functions.sqlquery import sql_query_conditional
-    chosen_movie = sql_query_conditional("SELECT * FROM data WHERE Mood=? AND Length=? AND Type=?AND Genre=?",(conditions)) # returns query as a tuple list
-    movie = ([i[1] for i in chosen_movie][0]) # get title of the movie from tuple list
-    url = ([i[6] for i in chosen_movie][0])
-    
-    from functions.web_scraping import get_info # get info about the movie from IMDB url
-    release_year, director, summary = get_info(url)
-
-    return render_template('movie.html',selectedMood=mood, selectedLength=length, selectedType=movie_type, selectedGenre=genre, selectedMovie=movie, Director=director, Year=release_year, Summary=summary)
-
-@app.route('/recommendations')
-def recommend():
-    return render_template('submit.html')
-
-@app.route('/submitted', methods=['GET','POST'])
-def submitted():
-    rec = request.form
-    return render_template('submitted.html')
-
-"""app.route('/about')
-def about():
-    return render_template('about.html')
- """
-
+    chosen_movie = sql_query_conditional("SELECT * FROM data WHERE Mood=? AND Length=?",(mood,genre,))
+    print(chosen_movie)
+    #chosen_movie = sql_query_conditional("SELECT * FROM data WHERE Mood=? AND Length=? AND Movie_type=? AND Genre=?",(conditions)) # returns query as a tuple list
+    #movie = ([i[1] for i in chosen_movie][0]) # get title of the movie from tuple list
+    #imdb_url = ([i[6] for i in chosen_movie][0]) # get IMDB link from tuple list
+    #embed_url = ([i[7] for i in chosen_movie][0]) # get video embed link from tuple list
+    # Web-scrape from IMDB
+    #from functions.web_scraping import get_info
+    #release_year, director, summary = get_info(imdb_url)
+    #return render_template('movie.html',selectedMood=mood, selectedLength=length, selectedType=movie_type, selectedGenre=genre, selectedMovie=movie, Director=director, Year=release_year, Summary=summary,Embed_url=embed_url)
+    return render_template('movie.html')
 if __name__ == "main":
     app.run(debug=True)
     app.config['TEMPLATES_AUTO_RELOAD']=True

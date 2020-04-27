@@ -2,7 +2,8 @@ import os
 import sqlite3
 import pandas as pd
 
-data = pd.read_csv('functions/Film_Database.csv')
+data = pd.read_excel('functions/Film_Database.xls')
+data.columns = data.columns.str.strip()
 
 # Clear the database if it exists
 if os.path.exists('film.db'):
@@ -10,9 +11,21 @@ if os.path.exists('film.db'):
 
 # Create a connection to the database
 conn = sqlite3.connect('film.db')
+cur = conn.cursor()
 
 # Add the data to the database
 data.to_sql('data', conn)
+
+# to view all tables
+def view_tables():
+    cur.execute("SELECT name FROM sqlite_master WHERE type='table'")
+    tables =cur.fetchall()
+    return tables
+
+# Create recommendations database
+def sql_make_rec():
+    cur = conn.cursor()
+    cur.execute("CREATE TABLE IF NOT EXISTS recommendations (ID INTEGER PRIMARY KEY, Film TEXT, Length TEXT, Movie_Type TEXT, Genre TEXT)")
 
 # Make a convenience function for running SQL queries
 def sql_query(query):
@@ -36,4 +49,8 @@ def sql_edit_insert(query,var):
 def sql_delete(query,var):
     cur = conn.cursor()
     cur.execute(query,var)
+
+
+
+
 
