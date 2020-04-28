@@ -2,17 +2,21 @@
     outline: 1px solid white;
 }  */
 
+
+
 body {
     color: white;
     background-color: #4E5DEC;
     font-family: 'Cantarell', sans-serif;
     background-color: rgba(78, 93, 236, 1);
+    margin: 0;
 }
+
 
 
 .navbar {
     font-family: 'Cantarell', sans-serif;
-    font-size: 0.7em;
+    font-size: 0.9em;
     letter-spacing: 4px;
     padding: 10px;
 }
@@ -24,50 +28,44 @@ body {
     padding: 10px;
 } */
 
-.about {
-    font-family: 'Cantarell', sans-serif;
-    font-size: 0.6em;
-    letter-spacing: 4px;
-    padding: 10px;
-}
 
 h1 {
     font-family: 'Prata', serif;
-    font-size: 80px;
+    font-size: 56px;
     text-align: center;
-    padding: 80px 50px 60px 50px;
+    padding: 60px 50px 60px 50px;
 }
 
 
 
 .fearless {
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
     text-align: center;
-    padding: 50px 50px 50px 0px;
+    padding: 40px 40px 40px 0px;
     display: block;
 }
 
 .uplifting {
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
     text-align: center;
-    padding: 50px 50px 50px 0px;
+    padding: 40px 40px 40px 0px;
 }
 
 .thought_provoking {
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
     text-align: center;
-    padding: 50px 50px 50px 0px;
+    padding: 40px 40px 40px 0px;
     display: block;
 }
 
 .adventurous {
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
     text-align: center;
-    padding: 50px 50px 50px 0px;
+    padding: 40px 40px 40px 0px;
     display: block;
 }
 
