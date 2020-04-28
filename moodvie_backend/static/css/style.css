@@ -12,7 +12,7 @@ body {
 }
 
 
-.moodvie_logo {
+/* .moodvie_logo {
     font-weight: bold;
     font-family: 'Cantarell', sans-serif;
     font-size: 1em;
@@ -21,6 +21,14 @@ body {
 }
 
 .recommendations {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 4px;
+    padding: 10px;
+} */
+
+
+.navbar {
     font-family: 'Cantarell', sans-serif;
     font-size: 0.9em;
     letter-spacing: 4px;

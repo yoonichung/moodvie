@@ -17,31 +17,18 @@
 
    <body>
 
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand nav-link text-white" href="/index"><p class="moodvie_logo"><strong>MOODVIE</strong></p></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown"> -->
-        <ul class="navbar-nav w-100">
-          <!-- <li class="nav-item active"> -->
-          <li class="nav-item ml-auto active">
-            <li><a class="nav-link text-white" href="/about">ABOUT</a> </li>
-            <li><a class="nav-link text-white" href="/recommendations">RECOMMENDATIONS</a> </li>
-    
-          </li>
-        </ul>  
-      <!-- </div> -->
-    </nav>
-    
-    <!-- <nav class="navbar justify-content-end">
-      <a class="navbar-brand" href="/index"><p class="moodvie_logo">MOODVIE</p></a>  
-       <a class="nav-link text-white" href="/about"><p class="recommendations">ABOUT</p></a>  
-       <a class="nav-link text-white" href="/recommendations"><p class="recommendations">RECOMMENDATIONS</p></a>
-      </span>  
-    </div>  
-</nav> -->
+  <!--Navigation bar-->
+
+    <nav class="navbar">
+      <a class="navbar-brand nav-bar dark" href="/"> 
+          <img class="logo" alt="home" src="{{url_for('static', filename='images/MOODVIE_logo2.png')}}"  width="220" height="69"></a> 
+          <div class="nav justify-content-end">  
+              <a class="nav-link text-white" href="/about"><p class="text-white">ABOUT</p></a>  
+              <a class="nav-link text-white" href="/recommendations"><p>RECOMMENDATIONS</p></a>
+          </div>  
+  </nav>  
   
+    <!--Landing selections-->
 
     <div class="container">
       <div class="row">
