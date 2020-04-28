@@ -65,3 +65,7 @@ body {
   a:hover {
     color: #4E5DEC;
   }
+
+  a:active {
+    color: #4E5DEC;
+  }
