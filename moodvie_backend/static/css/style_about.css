@@ -1,10 +1,15 @@
+/* *{
+    outline: 1px solid white;
+}  */
+
+
 body{ 
-color: white;
-background-color: #4E5DEC;
-font-family: 'Cantarell', sans-serif;
-background:rgb(188,217,107);
-background: linear-gradient(90deg, rgb(188,217,107) 0%, rgb(29,166,197) 100%);
-margin: 0;
+    color: white;
+    background-color: #4E5DEC;
+    font-family: 'Cantarell', sans-serif;
+    background:rgb(188,217,107);
+    background: linear-gradient(90deg, rgb(188,217,107) 0%, rgb(29,166,197) 100%);
+    margin: 0;
 }
 
 .navbar {
@@ -17,6 +22,29 @@ margin: 0;
 .card {
 background-color: rgba(255, 255, 255, 0.575);
 
+
 }
 
+.header {
+text-align: left;
+font-size: 4em;
+color: #4E5DEC;
+font-family: 'Prata', serif;
+padding-top: 20px;
+padding-bottom: 0px;
+}
 
+.header2 {
+    text-align: left;
+    font-size: 3em;
+    color: #4E5DEC;
+    font-family: 'Prata', serif;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    }
+
+.tagline {
+font-size: 0.9em;
+letter-spacing: 4px;
+padding-bottom: 10px;
+}

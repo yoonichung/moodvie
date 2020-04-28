@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <!-- Chart.js-->
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script> 
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script> 
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style_about.css')}}">
   </head>
@@ -26,79 +31,124 @@
             <a class="nav-link text-white" href="/about"><p class="text-white">ABOUT</p></a>  
             <a class="nav-link text-white" href="/recommendations"><p>RECOMMENDATIONS</p></a>
         </div>  
-</nav>    
+</nav>  
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="header">ABOUT MOODVIE</h1>
+            <p class="tagline">MOOVIES FOR YOUR MOOD</p>
+          </div>
+        </div>
+      </div>
+  
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="Para1">
+            <p> Ever sit on the sofa in front of the telly, click on Netflix and 30 minutes later you still haven’t decided on what to watch? Yeah us too, we movie buffs have been plagued with <a class="link" href="https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice">decision fatigue</a>. In the light of the current COVID-19 pandemic, we are spending a considerable time in doors. 
+                Therefore, we at Moodvie aim to ease your browsing experience by deciding for you! </p>
+                <br>
+                <p>After asking a range of cinephile’s some questions we found that 97.4% believed their mood influences their browsing and consumption behaviours. We also found that (%age) browse for new content than a film favourite.  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+
+
 
 <div class="container">
-    <div class="col-md-6 offset-md-3">
-        <div class="card">    
-        <div class="card-body"> 
-    <canvas id="myChart"></canvas>
-        </div>   
+  <div class="row">
+    <div class="col align-self-start">
+        <div class="card" style="width: 30rem;">    
+         <div class="card-body " class="chart-wrapper"> 
+            <canvas id="myChart1"></canvas>
+         </div> 
+        </div>
+    </div>  
+  </div>
+  
+  <div class="col align-self-end">
+        <div class="card" style="width: 30rem;">    
+          <div class="card-body " class="chart-wrapper"> 
+              <canvas id="myChart2"></canvas>
+           </div>
+          </div>
         </div>
     </div>
 </div>
 
-<script>
-    let myChart = document.getElementById('myChart').getContext('2d');
+<br>
 
-    //Global Options
-    Chart.defaults.global.defaultFontFamily = 'Cantarell';
-    Chart.defaults.global.defaultFontSize = 14;
-    Chart.defaults.global.defaultFontColor = 'black'
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="Para2">
+          <p>
+            So whether you're in a good mood or not, we categorised some ‘hidden gem’ movies into four feelings for you to enjoy. Want to feel uplifted or experience the love of couples, families and friends? Only got a lunch break? Want to explore the independent film world? Whatever you’re in the MOOD for…
+             </p>  
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    let moodChart = new Chart(myChart, {
-        type:'doughnut',
-        data:{
-            labels:['Rarely true', 'Sometimes true', 'Often true','Very often or always true'],
-            datasets:[{
-                label:'Responses',
-                data: [
-                    1,
-                    5,
-                    15,
-                    17,
-                ],
-                // backgroundColor: 'white'
-                backgroundColor: [
-                '#1DA6C5',
-                '#BCD96B',
-                '#4E5DEC',
-                '#FDFFB2',
-                ]
-            }]
-        },
-        options:{
-            title: {
-                display:true,
-                text:'Pick movies based on mood',
-                fontSize: 18,
-            },
-           plugins:{
-                labels: {
-                render: 'percentage',
-                fontColor: ['green', 'white', 'red'],
-                precision: 2,
-                arc: true,
-                }
-            },
-            legend:{
-                display:true,
-                postion:'right',
-                // labels:{
-                //     fontColor: '#000'
-                // }
-            },
-            // layout: {
-            //     padding: {
-            //     }
-            // }
-        },
-        tooltips:{
-            enabled:true
-        }
-    });
-</script>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="header2">THE TEAM</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="Para3">
+          <p>
+            We at Moodvie are passionate about film, and how movies are acting as a source of escapism for us during this difficult time. In the spirit of Code First Girls our first selection of films all feature strong female leaders and/or female directors/writers/producers.
+             </p>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row" class="team">
+        <div class="col">
+          <p>
+            Yooni Chung <br>
+            (Backend Developer)
+             </p>  
+        </div>
+        <div class="col">
+            <p>
+            Lia Shergill <br>
+            (Frontend Developer )
+            </p>
+        </div>
+        <div class="col">
+            <p>
+            Charlie Richards <br>
+            (Backend Developer)
+            </p>
+        </div>
+        <div class="col">
+            <p>
+            Raquel Chambers <br>
+            (Frontend Developer)
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 <!-- Bootstrap JS -->
@@ -108,6 +158,9 @@
 
 <!--Chart JS-->
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-d"></script>
+<script src="{{url_for('static', filename='js/chart.js')}}"></script>
+<!-- <script src="{{url_for('static', filename='js/chart_two.js')}}"></script> -->
+
 
 </body>
 </html>
