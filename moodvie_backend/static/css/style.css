@@ -9,12 +9,18 @@ body {
     background-color: #4E5DEC;
     font-family: 'Cantarell', sans-serif;
     background-color: rgba(78, 93, 236, 1);
-    margin: 0;
 }
 
 
+.moodvie_logo {
+    font-weight: bold;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1em;
+    letter-spacing: 4px;
+    padding: 10px;
+}
 
-.navbar {
+.recommendations {
     font-family: 'Cantarell', sans-serif;
     font-size: 0.9em;
     letter-spacing: 4px;

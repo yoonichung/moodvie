@@ -17,21 +17,37 @@
 
    <body>
 
-    <nav class="navbar">
-      <a class="navbar-brand" href="/"> 
-        <img class="logo" alt="home" src="{{url_for('static', filename='images/MOODVIE_logo2.png')}}"  width="220" height="69"></a> 
-        <div class="nav justify-content-end">  
-          <a class="nav-link text-white" href="/about"><p class="text-white">ABOUT</p></a>  
-          <a class="nav-link text-white" href="/recommendations"><p>RECOMMENDATIONS</p></a>
-        </div>  
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand nav-link text-white" href="/index"><p class="moodvie_logo"><strong>MOODVIE</strong></p></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown"> -->
+        <ul class="navbar-nav w-100">
+          <!-- <li class="nav-item active"> -->
+          <li class="nav-item ml-auto active">
+            <li><a class="nav-link text-white" href="/about">ABOUT</a> </li>
+            <li><a class="nav-link text-white" href="/recommendations">RECOMMENDATIONS</a> </li>
+    
+          </li>
+        </ul>  
+      <!-- </div> -->
     </nav>
+    
+    <!-- <nav class="navbar justify-content-end">
+      <a class="navbar-brand" href="/index"><p class="moodvie_logo">MOODVIE</p></a>  
+       <a class="nav-link text-white" href="/about"><p class="recommendations">ABOUT</p></a>  
+       <a class="nav-link text-white" href="/recommendations"><p class="recommendations">RECOMMENDATIONS</p></a>
+      </span>  
+    </div>  
+</nav> -->
   
 
     <div class="container">
       <div class="row">
         <div class="col">
           <p class="header">YOU'RE IN THE MOOD FOR SOMETHING</p>
-          <p class="choices">{{selectedMood}}</p>
+          <p id="selectedMood" class="choices">{{selectedMood}}</p>
         </div>
       </div>
     </div>
@@ -72,7 +88,8 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+      <!-- Custom JS -->
+      <script src="{{url_for('static', filename='js/length_script.js')}}"></script>
    </body>
 </html>
 
