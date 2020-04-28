@@ -8,12 +8,21 @@ body {
     background: linear-gradient(90deg, rgba(237,181,218,1) 0%, rgba(236,173,78,1) 100%);
   }
 
-  .navbar {
+
+  .moodvie_logo {
+    font-weight: bold;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1em;
+    letter-spacing: 4px;
+    padding: 10px;
+}
+
+.recommendations {
     font-family: 'Cantarell', sans-serif;
     font-size: 0.9em;
     letter-spacing: 4px;
     padding: 10px;
-  }
+}
   
   .header {
     text-align: center;
@@ -46,6 +55,10 @@ body {
   
   a:link {
     text-decoration: none;
+    color: white;
+  }
+
+  a:visited {
     color: white;
   }
   
