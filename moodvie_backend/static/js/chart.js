@@ -4,7 +4,7 @@ let colorHex = ['#c51dbd','#EDB5DA', '#BCD96B', '#4E5DEC', '#ECAD4E'];
  //Global Options
     Chart.defaults.global.defaultFontFamily = 'Cantarell';
     Chart.defaults.global.defaultFontSize = 12;
-    Chart.defaults.global.defaultFontColor = 'black'
+    Chart.defaults.global.defaultFontColor = '#000'
 
 let ctx = document.getElementById('myChart1').getContext('2d');
 let myChart1 = new Chart(ctx, {
@@ -28,7 +28,7 @@ let myChart1 = new Chart(ctx, {
           },
           plugins: {
             datalabels: {
-              color: '#fff',
+              color: '#000',
               anchor: 'end',
               align: 'start',
               offset: -10,
@@ -72,7 +72,7 @@ let myChart2 = new Chart(cty, {
     },
     plugins: {
       datalabels: {
-        color: '#fff',
+        color: '#000',
         anchor: 'end',
         align: 'start',
         offset: -10,
