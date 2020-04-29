@@ -58,6 +58,11 @@ letter-spacing: 4px;
 padding-bottom: 10px;
 }
 
+.mood{
+    color: #4E5DEC;
+    font-family: 'Prata', serif;
+}
+
 /*Footer*/
 
 .footer {
