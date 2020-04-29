@@ -110,3 +110,12 @@ a:hover > .adventurous {
     background: rgb(107,206,217);
     background: linear-gradient(90deg,    rgba(107,206,217,1) 0%, rgba(197,29,189,1) 100%);
 }
+
+
+.footer {
+    font-size: 0.5em;
+    color: white;
+    letter-spacing: 4px;
+    
+
+}
