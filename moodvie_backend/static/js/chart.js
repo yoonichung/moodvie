@@ -8,7 +8,7 @@ let colorHex = ['#c51dbd','#EDB5DA', '#BCD96B', '#4E5DEC', '#ECAD4E'];
 
 let ctx = document.getElementById('myChart1').getContext('2d');
 let myChart1 = new Chart(ctx, {
-        type: 'doughnut',
+        type: 'pie',
         data: {
           datasets: [{
             data: [0, 2.6, 13.2, 39.5, 44.7],
