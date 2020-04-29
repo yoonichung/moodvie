@@ -1,3 +1,8 @@
+/* *{
+    outline: 1px solid white;
+}  */
+
+
 body{ 
 color: white;
 background-color: #4E5DEC;
@@ -26,6 +31,29 @@ text-align: center;
 .card {
 background-color: rgba(255, 255, 255, 0.575);
 
+
 }
 
+.header {
+text-align: left;
+font-size: 4em;
+color: #4E5DEC;
+font-family: 'Prata', serif;
+padding-top: 20px;
+padding-bottom: 0px;
+}
 
+.header2 {
+    text-align: left;
+    font-size: 3em;
+    color: #4E5DEC;
+    font-family: 'Prata', serif;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    }
+
+.tagline {
+font-size: 0.9em;
+letter-spacing: 4px;
+padding-bottom: 10px;
+}
