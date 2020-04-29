@@ -35,7 +35,7 @@ background-color: rgba(255, 255, 255, 0.575);
 }
 
 .header {
-text-align: left;
+text-align: center;
 font-size: 4em;
 color: #4E5DEC;
 font-family: 'Prata', serif;
@@ -44,7 +44,7 @@ padding-bottom: 0px;
 }
 
 .header2 {
-    text-align: left;
+    text-align: center;
     font-size: 3em;
     color: #4E5DEC;
     font-family: 'Prata', serif;
