@@ -4,19 +4,11 @@
 
 body {
     color: white;
+    font-family: 'Cantarell', sans-serif;
     background: rgb(237,181,218);
     background: linear-gradient(90deg, rgba(237,181,218,1) 0%, rgba(236,173,78,1) 100%);
+    margin: 0;
   }
-/* 
-
-  .moodvie_logo {
-    font-weight: bold;
-    font-family: 'Cantarell', sans-serif;
-    font-size: 1em;
-    letter-spacing: 4px;
-    padding: 10px;
-} */
-
 
 .navbar {
   font-family: 'Cantarell', sans-serif;
@@ -34,14 +26,13 @@ body {
   
   .header {
     text-align: center;
-    font-family: 'Cantarell', sans-serif;
     letter-spacing: 2px;
     padding-top: 60px;
   }
   
   .choices {
     text-align: center;
-    font-family: 'Cantarell', sans-serif;
+
     color: #4E5DEC;
     letter-spacing: 2px;
   }
@@ -56,10 +47,12 @@ body {
   .short {
     font-size: 3em;
     text-align: center;
-    font-family: 'Cantarell', sans-serif;
+  
     letter-spacing: 2px;
     padding: 50px 50px;
   }
+
+/*Options*/
 
   a:link {
     text-decoration: none;
@@ -78,3 +71,14 @@ body {
   a:active {
     color: #4E5DEC;
   }
+
+
+/* Footer*/
+
+.footer {
+  font-size: 0.5em;
+  color: white;
+  letter-spacing: 4px;
+  
+
+}

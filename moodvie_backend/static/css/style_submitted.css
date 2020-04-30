@@ -31,3 +31,13 @@ h1 {
     text-align: center;
     padding: 200px 50px 100px 50px;
 }
+
+/*Footer*/
+
+.footer {
+    font-size: 0.5em;
+    color: white;
+    letter-spacing: 4px;
+    
+  
+  }

@@ -54,3 +54,13 @@ label {
   color: white;
   border: 2px solid white;
 }
+
+/*Footer*/
+
+.footer {
+  font-size: 0.5em;
+  color: white;
+  letter-spacing: 4px;
+  
+
+}

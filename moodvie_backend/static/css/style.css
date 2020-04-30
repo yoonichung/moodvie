@@ -2,111 +2,123 @@
     outline: 1px solid white;
 }  */
 
+    body {
+        color: white;
+        background-color: #4E5DEC;
+        font-family: 'Cantarell', sans-serif;
+        background-color: rgba(78, 93, 236, 1);
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Navigation*/
+    .navbar {
+        font-family: 'Cantarell', sans-serif;
+        font-size: 0.9em;
+        letter-spacing: 4px;
+        padding: 10px;
+    }
+    
+    /*Landing Question*/
+    h1 {
+        font-family: 'Prata', serif;
+        font-size: 48px;
+        text-align: center;
+        padding: 50px 50px 40px 50px;
+    }
+    
+    /*Choices*/
+    .fearless {
+        font-size: 1.7em;
+        color: white;
+        text-align: center;
+        padding: 40px 40px 40px 0px;
+        display: block;
+    }
+    
+    .uplifting {
+        font-size: 1.7em;
+        color: white;
+        text-align: center;
+        padding: 40px 40px 40px 0px;
+    }
+    
+    .thought_provoking {
+        font-size: 1.7em;
+        color: white;
+        text-align: center;
+        padding: 40px 40px 40px 0px;
+        display: block;
+    }
+    
+    .adventurous {
+        font-size: 1.7em;
+        color: white;
+        text-align: center;
+        padding: 40px 40px 40px 0px;
+        display: block;
+    }
+    
+    
+    a:link {
+        text-decoration: none;
+        display: block;
+    }
+    
+    a:hover > .fearless {
+        background: rgb(217,107,107);
+        background: linear-gradient(90deg, rgba(217,107,107,1) 0%, rgba(29,180,197,1) 100%);
+    }
+    
+    a:hover > .uplifting {
+        background: rgb(236,173,78);
+        background: linear-gradient(90deg,  rgba(236,173,78,1) 0%, rgba(237,181,218,1) 100%);
+    }
+    
+    a:hover > .thought_provoking {
+        background: rgb(188,217,107);
+        background: linear-gradient(90deg,    rgba(188,217,107,1) 0%, rgba(29,166,197,1) 100%);
+    }
+    
+    a:hover > .adventurous {
+        background: rgb(107,206,217);
+        background: linear-gradient(90deg,    rgba(107,206,217,1) 0%, rgba(197,29,189,1) 100%);
+    }
+    
+    /*Footer*/
+    .footer {
+        font-size: 0.5em;
+        color: white;
+        letter-spacing: 4px;
+    }
 
 
-body {
-    color: white;
-    background-color: #4E5DEC;
-    font-family: 'Cantarell', sans-serif;
-    background-color: rgba(78, 93, 236, 1);
-}
-
-
-/* .moodvie_logo {
-    font-weight: bold;
-    font-family: 'Cantarell', sans-serif;
-    font-size: 1em;
-    letter-spacing: 4px;
-    padding: 10px;
-}
-
-.recommendations {
-    font-family: 'Cantarell', sans-serif;
-    font-size: 0.9em;
-    letter-spacing: 4px;
-    padding: 10px;
-} */
-
-
-.navbar {
-    font-family: 'Cantarell', sans-serif;
-    font-size: 0.9em;
-    letter-spacing: 4px;
-    padding: 10px;
-}
-
-/* .tagline {
-    font-family: 'Cantarell', sans-serif;
-    font-size: 0.6em;
-    letter-spacing: 4px;
-    padding: 10px;
-} */
-
-
-h1 {
-    font-family: 'Prata', serif;
-    font-size: 56px;
-    text-align: center;
-    padding: 60px 50px 60px 50px;
-}
-
-
-
-.fearless {
-    font-size: 1.5em;
-    color: white;
-    text-align: center;
-    padding: 40px 40px 40px 0px;
-    display: block;
-}
-
-.uplifting {
-    font-size: 1.5em;
-    color: white;
-    text-align: center;
-    padding: 40px 40px 40px 0px;
-}
-
-.thought_provoking {
-    font-size: 1.5em;
-    color: white;
-    text-align: center;
-    padding: 40px 40px 40px 0px;
-    display: block;
-}
-
-.adventurous {
-    font-size: 1.5em;
-    color: white;
-    text-align: center;
-    padding: 40px 40px 40px 0px;
-    display: block;
-}
-
-
-
-
-a:link {
-    text-decoration: none;
-    display: block;
-}
-
-a:hover > .fearless {
-    background: rgb(217,107,107);
-    background: linear-gradient(90deg, rgba(217,107,107,1) 0%, rgba(29,180,197,1) 100%);
-}
-
-a:hover > .uplifting {
-    background: rgb(236,173,78);
-    background: linear-gradient(90deg,  rgba(236,173,78,1) 0%, rgba(237,181,218,1) 100%);
-}
-
-a:hover > .thought_provoking {
-    background: rgb(188,217,107);
-    background: linear-gradient(90deg,    rgba(188,217,107,1) 0%, rgba(29,166,197,1) 100%);
-}
-
-a:hover > .adventurous {
-    background: rgb(107,206,217);
-    background: linear-gradient(90deg,    rgba(107,206,217,1) 0%, rgba(197,29,189,1) 100%);
-}
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) { 
+    /*Landing Question*/
+    h1 {
+        font-size: 70px;
+        padding: 60px 50px 60px 50px;
+    }
+    
+    /*Choices*/
+    .fearless {
+        font-size: 2em;
+        padding: 50px 50px 50px 0px;
+    }
+    
+    .uplifting {
+        font-size: 2em;
+        padding: 50px 50px 50px 0px;
+    }
+    
+    .thought_provoking {
+        font-size: 2em;
+        padding: 50px 50px 50px 0px;
+    }
+    
+    .adventurous {
+        font-size: 2em;
+        padding: 50px 50px 50px 0px;    
+    }
+         }

@@ -1,17 +1,17 @@
-let labels = ['Rarely true', 'Sometimes true', 'Often true','Very often or always true'];
-let colorHex = ['#EDB5DA', '#BCD96B', '#4E5DEC', '#ECAD4E'];
+let labels = ['Never or very rarely true','Rarely true', 'Sometimes true', 'Often true','Very often or always true'];
+let colorHex = ['#c51dbd','#EDB5DA', '#BCD96B', '#4E5DEC', '#ECAD4E'];
 
  //Global Options
     Chart.defaults.global.defaultFontFamily = 'Cantarell';
     Chart.defaults.global.defaultFontSize = 12;
-    Chart.defaults.global.defaultFontColor = 'black'
+    Chart.defaults.global.defaultFontColor = '#000'
 
-let ctx = document.getElementById('myChar1').getContext('2d');
+let ctx = document.getElementById('myChart1').getContext('2d');
 let myChart1 = new Chart(ctx, {
-        type: 'doughnut',
+        type: 'pie',
         data: {
           datasets: [{
-            data: [2.6, 13.2, 39.5, 44.7],
+            data: [0, 2.6, 13.2, 39.5, 44.7],
             backgroundColor: colorHex
           }],
           labels: labels
@@ -28,7 +28,7 @@ let myChart1 = new Chart(ctx, {
           },
           plugins: {
             datalabels: {
-              color: '#fff',
+              color: '#000',
               anchor: 'end',
               align: 'start',
               offset: -10,
@@ -55,7 +55,7 @@ let myChart2 = new Chart(cty, {
   type: 'doughnut',
   data: {
     datasets: [{
-      data: [2.6, 13.2, 39.5, 44.7],
+      data: [2.6, 7.9, 26.3, 39.5, 23.7],
       backgroundColor: colorHex
     }],
     labels: labels
@@ -64,7 +64,7 @@ let myChart2 = new Chart(cty, {
     responsive: true,
         title: {
             display:true,
-            text: 'Mood influences browsing and consumption behaviours'
+            text: 'Want to watch new content'
         },
 
     legend: {
@@ -72,7 +72,7 @@ let myChart2 = new Chart(cty, {
     },
     plugins: {
       datalabels: {
-        color: '#fff',
+        color: '#000',
         anchor: 'end',
         align: 'start',
         offset: -10,
