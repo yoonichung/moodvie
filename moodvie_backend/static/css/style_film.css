@@ -75,7 +75,7 @@ body {
 
 
 /* Extra large devices (large laptops and desktops, 1400px and up) */
-@media only screen and (min-width: 1450x) { 
+@media only screen and (min-width: 1450px) { 
 /*Movie*/
 .movie {
   font-size: 4em;
