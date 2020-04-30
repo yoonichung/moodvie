@@ -94,7 +94,7 @@
 
 
 /* Extra large devices (large laptops and desktops, 1400px and up) */
-@media only screen and (min-width: 1400px) { 
+@media only screen and (min-width: 1450px) { 
     /*Landing Question*/
     h1 {
         font-size: 70px;
