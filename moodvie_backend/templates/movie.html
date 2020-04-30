@@ -19,17 +19,15 @@
 
     <!--Navigation Bar-->
     
-    <nav class="navba navbar-expand-lg">
-      <div class="d-flex flex-grow-1">
-      <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-      <a class="navbar-brand d-none d-lg-inline-block" href="/">
-          <img class="logo" alt="home" src="{{url_for('static', filename='images/MOODVIE_logo2.png')}}"  width="220" height="69"></a> 
+    <nav class="navbar">
+      <a class="navbar-brand nav-bar dark" href="/"> 
+          <img class="logo" alt="home" src="{{url_for('static', filename='images/MOODVIE_logo2.png')}}" width="220" height="69"></a> 
           <div class="nav justify-content-end">  
               <a class="nav-link text-white" href="/about"><p class="text-white">ABOUT</p></a>  
               <a class="nav-link text-white" href="/recommendations"><p>RECOMMENDATIONS</p></a>
           </div>  
-        </div>
-    </nav>  
+  </nav>  
+  
 
 
     <div class="container">
