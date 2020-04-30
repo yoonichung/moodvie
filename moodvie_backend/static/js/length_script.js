@@ -1,0 +1,21 @@
+window.addEventListener("load",function() { 
+    console.log('loaded');
+    let mood = document.getElementById("selectedMood").innerHTML;
+        console.log(mood);
+        changeBackgroundBasedOnMood(mood);
+ });
+
+function changeBackgroundBasedOnMood(mood) {
+    if (mood.includes("inspiring")) {
+        document.body.style.backgroundColor = 'rgb(' + [50,177,192].join(',') + ')';
+        // document.body.style= hsl(186, 59%, 47%);
+    } else if (mood.includes("uplifting")) {
+        document.body.style.backgroundColor = 'rgb(' + [235, 173, 90].join(',') + ')';
+        // document.body.style = hsl(33, 78% 65%);
+    } else if (mood.includes("thought-provoking")) {
+        document.body.style.backgroundColor = 'rgb(' + [184, 214, 117].join(',') + ')';
+        // document.body.style = hsl(79, 54% 65%);
+    } else if (mood.includes("love")) {
+        document.body.style.backgroundColor = 'rgb(' + [193, 46, 188].join(',') + ')';
+        }
+}
