@@ -5,12 +5,12 @@ window.addEventListener("load",function() {
 
  function changeBackgroundBasedOnMood(mood) {
     if ("selectedMood" === "Inspiring") {
-        document.body.style = hsl(186, 59% 47%);
+        document.body.style = rgb(50, 177, 192);
     } else if ("selectedMood" === "Uplifting") {
-        document.body.style = hsl(33, 78%, 65%);
+        document.body.style = rgb(235, 173, 90);
     } else if ("selectedMood" === "Thought Provoking") {
-        document.body.style = hsl(79, 54%, 65%);
-    } else ("selectedMood" === "Love") {
-        document.body.style = hsl(302, 62%, 47%);
+        document.body.style = rgb(184, 214, 117);
+    } else {
+        document.body.style = rgb(193, 46, 188);
     }
  };
