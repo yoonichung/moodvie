@@ -67,22 +67,22 @@
     
     a:hover > .fearless {
         background: rgb(217,107,107);
-        background: linear-gradient(90deg, rgba(217,107,107,1) 0%, rgba(29,180,197,1) 100%);
+        background: radial-gradient(circle, rgba(217,107,107,1) 0%, rgba(78,93,236,1) 100%);
     }
     
     a:hover > .uplifting {
         background: rgb(236,173,78);
-        background: linear-gradient(90deg,  rgba(236,173,78,1) 0%, rgba(237,181,218,1) 100%);
+        background: radial-gradient(circle, rgba(236,173,78,1) 0%, rgba(78,93,236,1) 100%);
     }
     
     a:hover > .thought_provoking {
         background: rgb(188,217,107);
-        background: linear-gradient(90deg,    rgba(188,217,107,1) 0%, rgba(29,166,197,1) 100%);
+        background: radial-gradient(circle, rgba(188,217,107,1) 0%, rgba(78,93,236,1) 100%);
     }
     
     a:hover > .adventurous {
-        background: rgb(107,206,217);
-        background: linear-gradient(90deg,    rgba(107,206,217,1) 0%, rgba(197,29,189,1) 100%);
+        background: rgb(107,217,149);
+        background: radial-gradient(circle, rgba(107,217,149,1) 0%, rgba(78,93,236,1) 100%);
     }
     
     /*Footer*/
