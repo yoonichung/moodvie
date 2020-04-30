@@ -8,6 +8,7 @@ body {
     /* background: rgb(237,181,218);
     background: linear-gradient(90deg, rgba(237,181,218,1) 0%, rgba(236,173,78,1) 100%); */
     margin: 0;
+    padding: 0;
   }
 
 .navbar {
@@ -17,22 +18,15 @@ body {
   padding: 10px;
 }
 
-/* .recommendations {
-    font-family: 'Cantarell', sans-serif;
-    font-size: 0.9em;
-    letter-spacing: 4px;
-    padding: 10px;
-} */
   
   .header {
     text-align: center;
     letter-spacing: 2px;
-    padding-top: 60px;
+    padding-top: 20px;
   }
   
   .choices {
     text-align: center;
-
     color: #4E5DEC;
     letter-spacing: 2px;
   }
@@ -40,12 +34,12 @@ body {
   h1 {
     text-align: center;
     font-family: 'Prata', serif;
-    font-size: 6em;
+    font-size: 4.5em;
     padding: 50px 30px;
   }
   
   .short {
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
   
     letter-spacing: 2px;
@@ -79,6 +73,22 @@ body {
   font-size: 0.5em;
   color: white;
   letter-spacing: 4px;
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) { 
   
+  /*Landing Question*/
+  .header {
+    padding-top: 60px;
+  }
+  
+  h1 {
+    font-size: 6em;
+  }
+  
+  .short {
+    font-size: 3em;
+  }
 
 }
