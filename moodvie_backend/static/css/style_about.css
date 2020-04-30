@@ -19,7 +19,14 @@ text-align: center;
     letter-spacing: 4px;
     padding: 10px;
 }
+/* 
+.hero_text {
+    text-align: center;
+}
 
+.tag_line {
+    text-align: center;
+} */
 
 .card {
 background-color: rgba(255, 255, 255, 0.575);
@@ -29,17 +36,16 @@ background-color: rgba(255, 255, 255, 0.575);
 
 .header {
 text-align: center;
-font-size: 3.5em;
+font-size: 4em;
 color: #4E5DEC;
 font-family: 'Prata', serif;
 padding-top: 20px;
 padding-bottom: 0px;
 }
 
-
 .header2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     color: #4E5DEC;
     font-family: 'Prata', serif;
     padding-top: 20px;
@@ -64,28 +70,5 @@ padding-bottom: 10px;
     color: white;
     letter-spacing: 4px;
     
+
 }
-
-/* Extra large devices (large laptops and desktops, 1400px and up) */
-@media only screen and (min-width: 1400px) { 
-
-    .header {
-        text-align: center;
-        font-size: 4em;
-        color: #4E5DEC;
-        font-family: 'Prata', serif;
-        padding-top: 20px;
-        padding-bottom: 0px;
-        }
-        
-        .header2 {
-            text-align: center;
-            font-size: 3em;
-            color: #4E5DEC;
-            font-family: 'Prata', serif;
-            padding-top: 20px;
-            padding-bottom: 0px;
-            }
-        
-     
-    }
