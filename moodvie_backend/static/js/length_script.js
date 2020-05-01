@@ -15,7 +15,7 @@ function changeBackgroundBasedOnMood(mood) {
     } else if (mood == "thought-provoking") {
         document.body.style.backgroundColor = 'rgb(' + [184, 214, 117].join(',') + ')';
         // document.body.style = hsl(79, 54% 65%);
-    } else {
+    } else if (mood.includes("love")) {
         document.body.style.backgroundColor = 'rgb(' + [107, 217, 149].join(',') + ')';
         }
 }
