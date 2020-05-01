@@ -10,85 +10,40 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}"> 
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style_submitted.css')}}">
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 </head>
 
-  <body>
+<body>
 <!-- Navivation section-->
 
 <nav class="navbar">
-    <a class="navbar-brand" href="/"> 
+  <a class="navbar-brand nav-bar dark" href="/"> 
       <img class="logo" alt="home" src="{{url_for('static', filename='images/MOODVIE_logo2.png')}}"  width="220" height="69"></a> 
       <div class="nav justify-content-end">  
-        <a class="nav-link text-white" href="/about"><p class="text-white">ABOUT</p></a>  
-        <a class="nav-link text-white" href="/recommendations"><p>RECOMMENDATIONS</p></a>
+          <a class="nav-link text-white" href="/about"><p class="text-white">ABOUT</p></a>  
+          <a class="nav-link text-white" href="/recommendations"><p>RECOMMENDATIONS</p></a>
       </div>  
-</nav>
+</nav>  
 
 
 <!-- Landing question-->
 <div class="container.fluid">
   <div class="col">
-        <h1>What are you in the mood for?</h1>
+        <h1>Thank you<br>for your recommendation!</h1>
     </div>
   </div>
 
-
-
-<!-- Options -->
-
-<div class="row no-gutters">
-    <div class="col">
-        <a href="/length?mood=inspiring">
-          <div class="fearless">
-          Inspiring
-          </div>
-        </a>
-      </div>
-    </div>
-
-<div class="row no-gutters">
-      <div class="col">
-      <a href="/length?mood=uplifting">
-        <div class="uplifting">
-        Uplifting
-        </div>
-      </a>
-    </div>
-  </div>
-
-
-
-<div class="row no-gutters">
-  <div class="col">
-      <a href="/length?mood=thought-provoking">
-        <div class="thought_provoking">
-        Thought-Provoking
-        </div>
-      </a>
-    </div>
-  </div>
-
-
-<div class="row no-gutters">
-  <div class="col">
-      <a href="/length?mood=love">
-        <div class="adventurous">
-        Love
-        </div>
-        </a>
-    </div>
-  </div>
-
+<br>
+<br>
 
 <!-- Footer -->
 <nav class="navbar fixed-bottom justify-content-end">
-<div class="footer">
-<p class="nav-item"> Made with ❤︎ by MOODVIE © 2020</p>
-</div>
+  <div class="footer">
+    <p class="nav-item"> Made with ❤︎ by MOODVIE © 2020</p>
+  </div>
 </nav>
 
 

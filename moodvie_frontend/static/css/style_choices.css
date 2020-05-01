@@ -1,0 +1,92 @@
+/* *{
+    outline: 1px solid white;
+}  */
+
+body {
+    color: white;
+    font-family: 'Cantarell', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 4px;
+  padding: 10px;
+}
+
+  
+  .header {
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 20px;
+  }
+  
+  .choices {
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Prata', serif;
+    font-size: 4.5em;
+    padding: 50px 30px;
+  }
+  
+  .short {
+    font-size: 2.5em;
+    text-align: center;
+  
+    letter-spacing: 2px;
+    padding: 50px 50px;
+  }
+
+/*Options*/
+
+  a:link {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    color: #4E5DEC;
+  }
+
+  a:active {
+    color: #4E5DEC;
+  }
+
+
+/* Footer*/
+
+.footer {
+  font-size: 0.5em;
+  color: white;
+  letter-spacing: 4px;
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1450px) { 
+  
+  /*Landing Question*/
+  .header {
+    padding-top: 60px;
+  }
+  
+  h1 {
+    font-size: 6em;
+  }
+  
+  .short {
+    font-size: 3em;
+  }
+
+}

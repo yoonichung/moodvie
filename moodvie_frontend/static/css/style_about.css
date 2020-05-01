@@ -1,0 +1,91 @@
+/* *{
+    outline: 1px solid white;
+}  */
+
+
+body{ 
+color: white;
+background-color: #4E5DEC;
+font-family: 'Cantarell', sans-serif;
+background:rgb(188,217,107);
+background: linear-gradient(90deg, rgb(188,217,107) 0%, rgb(29,166,197) 100%);
+margin: 0;
+text-align: center;
+}
+
+.navbar {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 4px;
+    padding: 10px;
+}
+
+
+.card {
+background-color: rgba(255, 255, 255, 0.575);
+
+
+}
+
+.header {
+text-align: center;
+font-size: 3.5em;
+color: #4E5DEC;
+font-family: 'Prata', serif;
+padding-top: 20px;
+padding-bottom: 0px;
+}
+
+
+.header2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #4E5DEC;
+    font-family: 'Prata', serif;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    }
+
+.tagline {
+font-size: 0.9em;
+letter-spacing: 4px;
+padding-bottom: 10px;
+}
+
+.mood{
+    color: #4E5DEC;
+    font-family: 'Prata', serif;
+}
+
+/*Footer*/
+
+.footer {
+    font-size: 0.5em;
+    color: white;
+    letter-spacing: 4px;
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1450px) { 
+
+    .header {
+        text-align: center;
+        font-size: 4em;
+        color: #4E5DEC;
+        font-family: 'Prata', serif;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        }
+        
+        .header2 {
+            text-align: center;
+            font-size: 3em;
+            color: #4E5DEC;
+            font-family: 'Prata', serif;
+            padding-top: 20px;
+            padding-bottom: 0px;
+            }
+        
+     
+    }

@@ -1,34 +1,51 @@
+/* *{
+    outline: 1px solid white;
+}  */
+
 body {
   background: rgb(237,181,218);
   background: linear-gradient(90deg, rgba(237,181,218,0.6) 0%, rgba(236,173,78,0.6) 100%);
   color: white;
 }
 
+
+/*Navigation*/
+.navbar {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 4px;
+  padding: 10px;
+}
+
+/*Landing Statement*/
 .header {
   text-align: left;
   font-family: 'Cantarell', sans-serif;
   letter-spacing: 2px;
-  padding-top: 80px;
+  padding-top: 5px;
 }
 
 .choices {
   text-align: left;
   font-family: 'Cantarell', sans-serif;
+  font-size: 0.8em;
   color: #4E5DEC;
   letter-spacing: 2px;
+  
 }
 
+/*Movie*/
 .movie {
   text-align: left;
-  font-size: 4em;
+  font-size: 3.5em;
   color: #4E5DEC;
   font-family: 'Prata', serif;
-  padding-top: 80px;
+  padding-top: 10px;
 }
 
 .details {
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #4E5DEC;
   font-family: 'Cantarell', sans-serif;
   /* padding-top: 40px; */
@@ -38,22 +55,43 @@ body {
   text-align: left;
   color: #4E5DEC;
   font-family: 'Cantarell', sans-serif;
+  padding-top: 10px;
+  font-size: 0.9em;
+}
+
+.watch_now {
+  padding-top: 20px;
+  font-family: 'Cantarell', sans-serif;
+}
+
+
+/*Footer*/
+
+.footer {
+  font-size: 0.5em;
+  color: white;
+  letter-spacing: 4px;
+}
+
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1450px) { 
+/*Movie*/
+.movie {
+  font-size: 4em;
+  padding-top: 60px;
+}
+
+.details {
+  font-size: 1.5em;
+}
+
+.synopsis {
   padding-top: 40px;
 }
 
 .watch_now {
   padding-top: 40px;
-  font-family: 'Cantarell', sans-serif;
 }
 
-.button {
-  background-color: #4E5DEC;
-  color: white;
-  border: 2px solid #4E5DEC;
-  padding: 10px;
-}
-
-.button:hover {
-  background-color: white;
-  color: #4E5DEC;
 }

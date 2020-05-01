@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Moodvie</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Chart.js-->
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script> 
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script> 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style_about.css')}}">
+  </head>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Navigation bar-->
+
+<nav class="navbar">
+    <a class="navbar-brand nav-bar dark" href="/"> 
+        <img class="logo" alt="home" src="{{url_for('static', filename='images/MOODVIE_logo2.png')}}"  width="220" height="69"></a> 
+        <div class="nav justify-content-end">  
+            <a class="nav-link text-white" href="/about"><p class="text-white">ABOUT</p></a>  
+            <a class="nav-link text-white" href="/recommendations"><p>RECOMMENDATIONS</p></a>
+        </div>  
+</nav>  
+
+<!--About Moodvie-->
+
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="header">About Moodvie</h1>
+            <p class="tagline">MOOVIES FOR YOUR MOOD</p>
+          </div>
+        </div>
+      </div>
+  
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="Para1">
+            <p> Moodvie is a project created during Code First Girls 2020 Hack from Home, where teams were challenged to code together during the time of crisis to find a solution to a problem. The problem we identified and decided to solve was the <a class="link" href="https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice">decision fatigue</a> faced when finding something to watch, as in the current COVID-19 pandemic and lockdown people are spending a considerable amount of time indoors. Therefore, we at Moodvie aim to ease your browsing experience by deciding for you! </p>
+                <br>
+                <p>After asking a range of cinephile’s some questions we found that 97.4% believed their mood influences their browsing and consumption behaviours. We also found that 89.5% browse for new content than a film favourite.  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+
+<!--Graphs-->
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col align-self-center">
+        <div class="card" style="width: 33rem;">    
+         <div class="card-body " class="chart-wrapper"> 
+            <canvas id="myChart1"></canvas>
+         </div> 
+        </div>
+    </div>  
+ 
+<br>
+  
+  <div class="col justify-context-center">
+        <div class="card" style="width: 33rem;">    
+          <div class="card-body " class="chart-wrapper"> 
+              <canvas id="myChart2"></canvas>
+           </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!--Back to about moodvie-->
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="Para2">
+          <p>
+            So whether you're in a good mood or not, we categorised some ‘hidden gem’ movies into four feelings for you to enjoy. Want to feel uplifted or experience the love of couples, families and friends? Only got a lunch break? Want to explore the independent film world? Whatever you’re in the <span class="mood">Mood</span> for…
+             </p>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+<br>
+
+<!--The Team-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="header2">The Team</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="Para3">
+          <p>
+            We at Moodvie are passionate about film, and how movies are acting as a source of escapism for us during this difficult time. In the spirit of Code First Girls our first selection of films all feature strong female leaders and/or female directors/writers/producers.
+             </p>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row" class="team">
+        <div class="col">
+          <p>
+            Yooni Chung <br>
+            (Backend Developer)
+             </p>  
+        </div>
+        <div class="col">
+            <p>
+            Lia Shergill <br>
+            (Frontend Developer )
+            </p>
+        </div>
+        <div class="col">
+            <p>
+            Charlie Richards <br>
+            (Backend Developer)
+            </p>
+        </div>
+        <div class="col">
+            <p>
+            Raquel Chambers <br>
+            (Frontend Developer)
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<br>
+<br>
+
+<!-- Footer -->
+<nav class="navbar fixed-bottom justify-content-end">
+  <div class="footer">
+    <p class="nav-item"> Made with ❤︎ by MOODVIE © 2020</p>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<!--Chart JS-->
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-d"></script>
+<script src="{{url_for('static', filename='js/chart.js')}}"></script>
+<!-- <script src="{{url_for('static', filename='js/chart_two.js')}}"></script> -->
+
+
+</body>
+</html>

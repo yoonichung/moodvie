@@ -1,0 +1,66 @@
+/* *{
+    outline: 1px solid white;
+}  */
+
+body {
+    color: white;
+    background-color: #4E5DEC;
+    font-family: 'Cantarell', sans-serif;
+    background: rgb(181,219,237);
+    background: linear-gradient(90deg, rgba(181,219,237,0.8281687675070029) 0%, rgba(137,78,236,0.788953081232493) 100%);
+}
+
+
+.navbar {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 4px;
+  padding: 10px;
+}
+
+
+h1 {
+    font-family: 'Prata', serif;
+    font-size: 5em;
+    text-align: center;
+    padding: 80px 50px 100px 50px;
+}
+
+label {
+  font-family: 'Cantarell', sans-serif;
+}
+
+.form {
+  font-family: 'Cantarell', sans-serif;
+  padding: 100px;
+}
+
+.watch_now {
+  padding-top: 20px;
+}
+
+.submit {
+  letter-spacing: 1px;
+  background-color: white;
+  color: #4E5DEC;;
+  border: 2px solid #4E5DEC;
+  padding: 10px;
+}
+
+.submit:hover {
+  letter-spacing: 1px;
+  background-color: #4E5DEC;
+  padding: 10px;
+  color: white;
+  border: 2px solid white;
+}
+
+/*Footer*/
+
+.footer {
+  font-size: 0.5em;
+  color: white;
+  letter-spacing: 4px;
+  
+
+}
