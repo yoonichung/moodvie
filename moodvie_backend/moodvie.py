@@ -25,9 +25,9 @@ def submitted():
     rec = (rec_mood, rec_length, rec_type, rec_genre)
 
     # Update the recommendations database
-    from functions.sqlquery import sql_make_rec ,sql_edit_insert 
+    from functions.sqlquery import sql_make_rec ,sql_edit_insert
     sql_make_rec()
-    sql_edit_insert("INSERT INTO recommendations (Film,Length,Type,Genre) VALUES(?,?,?,?)",(rec))
+    sql_edit_insert("INSERT INTO recommendations (Film,Length,Movie_Type,Genre) VALUES(?,?,?,?)",(rec))
     return render_template('submitted.html')
 
 """Options"""

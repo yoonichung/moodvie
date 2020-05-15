@@ -26,6 +26,7 @@ def view_tables():
 def sql_make_rec():
     cur = conn.cursor()
     cur.execute("CREATE TABLE IF NOT EXISTS recommendations (ID INTEGER PRIMARY KEY, Film TEXT, Length TEXT, Movie_Type TEXT, Genre TEXT)")
+    conn.commit()
 
 # Make a convenience function for running SQL queries
 def sql_query(query):
